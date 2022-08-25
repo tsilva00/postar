@@ -1,0 +1,268 @@
+/*Menu ativo na Navbar*/
+.nav-link.active {
+    background-color: black !important;
+    color: white !important;
+}
+
+/*Logo/Nome*/
+.navbar-brand {
+    font-weight: bold;
+}
+
+/*Alterar a largura do botão do menu*/
+a.nav-link {
+    padding: 8px 14px !important;
+}
+
+/*Index*/
+  /*ALterar a posição do menu para o lado direito*/
+  .index ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    justify-content: flex-end !important;
+    width: 100%;
+  }
+
+  /*Definir o background do header e demais configurações*/
+  header.index {
+    background: url("/background.jpg");
+    height: 450px;
+    background-size: cover;
+    display: grid;
+    /*Criar o efeito parallax scrolling*/
+    background-attachment: fixed;
+  }
+
+  /*Espaçamento da div com nome e descrição*/
+  .index .banner {
+    margin-top: 1cm !important;
+  }
+
+  /*Definições do ícone por foto*/
+  .index img.icon {
+    height: 28px;
+    margin-top: 8px;
+    margin-left: 4px;
+  }
+
+  /*Definições da navbar fixed*/
+  .index  nav.navbar.navbar-expand-lg.navbar-light.p-md-3.bg-light {
+    transition: background-color 100ms linear !important;
+  }
+
+  /*Definições da foto principal*/
+  .index .img-cover {
+    width: 228px;
+    height: 340px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: url("/Thais.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /*Definições do menu*/
+  header.index ul a:hover {
+    background-color: white;
+    color: black;
+
+  }
+
+  /*Definições da div de Título e definições*/
+  header.index #desc {
+    text-align: center;
+    margin-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  /*Definições do conteúdo após o banner*/
+  .index #content {
+    margin-top: .7cm;
+    margin-bottom: 1.5cm;
+  }
+
+  /*Definição de background dos ícones do Banner*/
+   #desc a:hover {
+    background: transparent !important;
+  }
+
+  /*Definção da cor dos ícones do banner*/
+   #desc ::before {
+    color: black;
+  }
+
+  @media (max-width: 750px) {
+    header.index {
+      height: auto !important;
+    }
+
+    header.index .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    .index .banner {
+      margin-top: 15% !important;
+    }
+
+    header.index #desc {
+      margin-top: auto;
+    }
+
+    .index #content {
+      margin-top: .5cm;
+      text-align: center;
+    }
+  }
+
+
+  /*Education*/
+  header.education {
+    height: 280px;
+    background-size: cover;
+    display: grid;
+    background-image: url("/background.jpg");
+}
+
+.education nav.navbar.navbar-expand-lg.navbar-light.p-md-3.bg-light {
+    transition: background-color 200ms linear !important;
+}
+
+.education ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    justify-content: flex-end !important;
+    width: 100%;
+}
+
+header.education ul a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.education #content {
+    margin-top: .7cm;
+}
+
+.education #content a {
+    color: black;
+}
+
+.education .banner {
+    text-align: center;
+    padding: 0px 280px;
+}
+
+.education .banner h1 {
+    padding-bottom: .3cm;
+    border-bottom: 8px solid #d52443;
+}
+
+  /*Fim education*/
+
+/*Definir font do site*/
+body {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+/*Definir fonte do conteúdo da section*/
+section {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/*Alterações no footer*/
+footer {
+    background-color: #D6D6D6;
+    text-align: center;
+}
+
+/*Definições da row do footer*/
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+/*Definição de cor e tamanho dos ícones do footer*/
+footer ::before {
+    color: black;
+    font-size: 17px;
+}
+
+/*Colocar os itens na mesma linha e esconder as bolinhas*/
+footer ul{
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 5px;
+    /*border-top: 2px solid gray;*/
+}
+
+/*Definir tamanho dos ícones e espaçamento*/
+footer i {
+    font-size: 25px;
+}
+
+/*Espaçamento no ícone de envelope do footer*/
+footer i.fas.fa-envelope {
+    margin: 0px 5px;
+}
+
+/*Definir ramano do ícone*/
+#desc i {
+    font-size: 25px;
+    margin: 10px;
+}
+
+/*Mudar a cor de um link do footer*/
+footer .th {
+    color: #d52443;
+}
+
+/*Colocar a lista em uma linha*/
+#desc ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+/*Definiões dos títulos dos conteúdos*/
+section h3 {
+    margin-top: 1cm;
+    font-size: 18px;
+    margin-bottom: 0.5cm;
+}
+
+
+@media (max-width: 991px) {
+/*Definição do menu-dropdown mobile e tablet*/
+header .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background-color: #d6d6d6;
+    border-radius: 0px 0px 19px 19px;
+}
+}
+
+@media (min-width: 751px) and (max-width: 993px){
+    /*Definição do espaçamento da section*/
+    section {
+        padding: 0px 225px !important;
+    }
+
+    #content {
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 750px) {
+    /*Centralizando o footer no mobile*/
+  footer p {
+    text-align: center !important;
+}
+}

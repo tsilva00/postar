@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thais Barcellos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        ::before {
+            color: #d52443;
+        }
+
+        section h3 {
+            margin-top: 1cm;
+            font-size: 18px;
+            margin-bottom: .5cm;
+        }
+
+        section {
+            padding: 0px 325px;
+        }
+
+        section ul {
+            margin-top: .5cm;
+        }
+
+        @media (max-width: 750px) {
+            header.education {
+                height: 200px !important;
+            }
+
+            header.education .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+
+            .education .banner {
+                padding: 0px 20px;
+            }
+
+            section {
+            padding: 0px !important;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="education">
+        <!--Navbar-->
+        <div class="row" id="main">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Thais Barcellos</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Main Page</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="education.html">Education</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="work.html">Work Experience</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="academic.html">Academic Research</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="conferences.html">Conferences</a>
+                          </li>
+                          <!--<li class="nav-item">
+                            <a class="nav-link" href="research.html">Research Projects</a>
+                          </li>-->
+                          <li class="nav-item">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <h1>EDUCATION</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div style="margin-bottom: 1.5cm;">
+                <h3>UNIVERSITY OF SÃO PAULO (USP)</h3>
+                <span style="font-size: 14px;"><i class="fas fa-map-marker-alt"></i> RIBEIRÃO PRETO, BRAZIL</span>
+                <ul type="square">
+                    <li>MA Economics - 2014</li>
+                    <li>Supervisor: Claudio Ribeiro de Lucinda</li>
+                </ul>
+            </div>
+            <div style="margin-bottom: 1.5cm;">
+                <h3>FEDERAL UNIVERSITY OF RIO DE JANEIRO (UFRJ)</h3>
+                <span style="font-size: 14px;"><i class="fas fa-map-marker-alt"></i> RIO DE JANEIRO, BRAZIL</span>
+                <ul type="square">
+                    <li>BA Economics - 2012</li>
+                    <li>Supervisor: Carlos Eduardo Frickmann Young </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row" style="border-top: 2px solid rgb(100, 100, 100);">
+          <div class="col-lg-6 col-md-6 col-xs-12"><p style="margin: 0px !important;  text-align: end;"><a style="text-decoration: none;" href="mailto:thais.barcellos@centrolemann.org.br"><i
+                  class="fas fa-envelope"></i><span style="font-size: 13px; color: black;">thais.barcellos@centrolemann.org.br</span></a></p></div>
+                  <div class="col-lg-6 col-md-6 col-xs-12"><p style="margin-top: auto; margin-bottom: auto; text-align: start;"><span style="font-size: 13px !important; margin-left: 1cm;">created by <a class="th" target="_blank" href="https://www.linkedin.com/in/thais-helena-s/">Thais Helena</a></span></p>
+          </div>
+          </div>
+      </footer>
+
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 50) {
+                nav.classList.add('bg-light');
+            } else {
+                nav.classList.remove('bg-light');
+            }
+        })
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0668213d62.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
